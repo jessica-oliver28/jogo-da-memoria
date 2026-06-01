@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0f2a, #1b1a4e);
+  font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.game-container {
+  max-width: 700px;
+  width: 100%;
+  background: rgba(25, 20, 60, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0c2c;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f0e6ff;
+}
+
+.stats div {
+  background: #2a235a;
+  padding: 0.25rem 0.7rem;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.stats span {
+  color: #c084fc;
+  font-size: 1.1rem;
+  margin-right: 3px;
+}
+
+button {
+  background: linear-gradient(135deg, #6c63ff, #9b4dff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.25rem 0.9rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #7c73ff, #ac5dff);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  background: transparent;
+  perspective: 400px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-front {
+  background: white;
+  transform: rotateY(180deg);
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  background: linear-gradient(145deg, #2b1e6e, #0f0b3a);
+  border: 1px solid #a855f7;
+}
+
+.card.matched .card-front {
+  box-shadow: 0 0 0 2px #c084fc, 0 0 0 4px rgba(192, 132, 252, 0.6);
+}
+
+
+.ranking {
+  background: #0f0c2ccc;
+  border-radius: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid #6c63ff;
+}
+
+.ranking h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  color: #c4b5fd;
+}
+
+.ranking-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.ranking-list li {
+  background: #1a154b;
+  padding: 0.25rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  color: #ede9fe;
+}
+
+.empty-ranking {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.2rem;
+}
