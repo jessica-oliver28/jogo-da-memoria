@@ -60,19 +60,28 @@ jogo-memoria/
 ├── imagens/  
 
 │   ├── foto1.jpg
+
 │   ├── foto2.jpg
+
 │   ├── foto3.jpg
+
 │   ├── foto4.jpg
+
 │   ├── foto5.jpg
+
 │   ├── foto6.jpg
+
 │   ├── foto7.jpg
+
 │   └── foto8.jpg
+
 └── README.md        
+
 
 
 🔗 Links
 
-Meu LinkedIn: linkedin.com/in/jessica-oliveira-frontend/
+Meu LinkedIn: https://www.linkedin.com/in/jessica-oliveira-frontend/
 
 E-mail para contato: jessicaoliverfaria@gmail.com
 
