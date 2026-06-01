@@ -29,8 +29,11 @@
 ## 🛠️ Tecnologias utilizadas
 
 | **HTML5** | Estrutura semântica da página |
+
 | **CSS3** | Flexbox, Grid, animações 3D (`perspective`, `transform`), media queries |
+
 | **JavaScript ** | Manipulação de DOM, eventos, `setInterval`, `localStorage`, lógica de estado |
+
 | **LocalStorage** | Persistência do ranking localmente |
 
 > Nenhuma biblioteca externa – tudo feito com **JavaScript puro** e **CSS customizado**.
@@ -48,10 +51,14 @@ cd jogo-memoria
 
 jogo-memoria/
 │
-├── index.html          
-├── style.css           
-├── script.js           
-├── imagens/            
+├── index.html 
+
+├── style.css 
+
+├── script.js  
+
+├── imagens/  
+
 │   ├── foto1.jpg
 │   ├── foto2.jpg
 │   ├── foto3.jpg
