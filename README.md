@@ -48,17 +48,18 @@ git clone https://github.com/seu-usuario/jogo-memoria.git
 cd jogo-memoria
 
 
-📁 Estrutura do projeto
-
+## 📁 Estrutura do projeto
+ 
 jogo-memoria/
 │
-├── index.html 
 
-├── style.css 
+├── index.html   
 
-├── script.js  
+├── style.css
 
-├── imagens/  
+├── script.js 
+
+├── imagens/
 
 │   ├── foto1.jpg
 
@@ -74,9 +75,9 @@ jogo-memoria/
 
 │   ├── foto7.jpg
 
-│   └── foto8.jpg
+│   └── foto8.jpg 
 
-└── README.md        
+└── README.md           
 
 
 
